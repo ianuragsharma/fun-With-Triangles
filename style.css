@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: #1f2937;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: #6d28d9;
+  --primary-white: #ffffff;
+}
+
+main {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero {
+  text-align: left;
+  color: var(--primary-white);
+}
+
+.nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+.nav-game {
+  text-align: right;
+}
+
+.description {
+  padding: 1rem;
+}
+
+.label {
+  margin: 1rem 0rem;
+  font-size: larger;
+}
+
+input {
+  font-size: larger;
+  padding: 0.3rem;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 5px;
+  height: 4vh;
+}
+textarea:focus,
+input:focus {
+  margin: 0;
+  border: var(--primary-color);
+}
+
+form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.question {
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+
+.option {
+  font-size: larger;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.question-container {
+  margin: 2rem;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 6px var(--primary-color);
+}
+
+.btn {
+  margin: 1.5rem auto;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+.link {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--primary-white);
+  font-weight: 500;
+}
+
+.list-item-inline {
+  display: inline-block;
+}
+
+.message {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin: 2rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Area of Triangle</title>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <h1 class="hero">Fun With Triangles</h1>
+      <ul class="nav-game">
+        <li class="list-item-inline">
+          <a class="link" href="/index.html">Is Triangle?</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/hypotenuse.html">Hypotenuse</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/">Area of Triangle</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/quiz.html">Quiz</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Calculate Area of a triangle</h1>
+      <form id="area-form">
+        <p class="description">Enter Height and base of the trangle</p>
+        <label class="label" for="height">Enter height of the traingle</label>
+        <input
+          class="input"
+          type="number"
+          required
+          min="1"
+          placeholder="Height"
+          id="height"
+        />
+
+        <label class="label" for="base">Enter base of the traingle</label>
+        <input
+          class="input"
+          type="number"
+          required
+          min="1"
+          placeholder="Base"
+          id="base"
+        />
+
+        <button class="btn">Calculate</button>
+      </form>
+      <p class="message" id="area-message"></p>
+    </main>
+
+    <script src="/area.js"></script>
+  </body>
+</html>
